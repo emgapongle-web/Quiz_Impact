@@ -1,1 +1,1 @@
-print("THIS IS A TEST")
+print("WELCOME TO QUIZ IMPACT!")
