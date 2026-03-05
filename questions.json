@@ -4,23 +4,23 @@
         "level" : "EASY",
         "score penalty":-10,
         "score increase":10,
-        "options":"A. Manila",
-        "answer":"A"
+        "options":["Manila", "Bulacan","Cebu","Davao"],
+        "answer":"Manila"
     },
     {
         "question":" Which of the following has the lowest frequency?",
         "level" : "MEDIUM",
         "score penalty":-20,
         "score increase":20,
-        "options":["A. Visible Light","B. Gamma Rays", "C. X-Rays", "D. Radio waves"],
-        "answer":"D"
+        "options":["Visible Light","Gamma Rays", "X-Rays", "Radio waves"],
+        "answer":"Radio waves"
     },
     {
         "question":" What is the moon phase called when the moon is between the Sun and Earth; the illuminated side faces away, making it invisible?",
         "level" : "HARD",
         "score penalty":-30,
         "score increase":30,
-        "options": ["A. Full Moon","B. Last Quarter", "C. New Moon", "D. Waning Crescent"],
-        "answer":"C"
+        "options": ["Full Moon","Last Quarter", "New Moon", "Waning Crescent"],
+        "answer":"New Moon"
     }
 ]

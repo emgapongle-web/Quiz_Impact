@@ -33,7 +33,7 @@ try:
         print("3. Exit")
         user_wow = input("What are you choosing to open? ")
         if user_wow == "1":
-            play()
+            play(iq_points, question_number)
         elif user_wow == "2":
             instructions()
         elif user_wow == "3":
@@ -97,21 +97,17 @@ try:
         time.sleep(2)
         print("But if you chose to exit, it will let you go back to the menu.")
 
-    def play():
-        global question_number, iq_points
+    def play(iq_points, question_number):
         for question in data:
             print(f"Question {question_number}: {question['question']}")
             print(f"This is {question['level']}.")
             options = question['options']
-
-            for letter, option in zip(letters, options):
-                print(f"  {letter}. {options} ")
+            for i in range(len(options)):
+                print(f"{letters[i]}. {options[i]} ")
 
             user_input = input("Your choice(A/B/C/D): ").upper().strip()
-
-            valid_letters = letters[:len(options)]
-            if user_input in valid_letters:
-                index = valid_letters.index(user_input)
+            if user_input in letters:
+                index = letters.index(user_input)
                 selected = options[index]
 
                 if selected == question['answer']:
