@@ -2,7 +2,7 @@ import time
 import json
 import random
 
-print("THIS IS A TEST")
+print("THIS IS A WORKING PROTOTYPE")
 user_name = str(input("What's your name?"))
 print(f"What an amazing name you got there, {user_name}!")
 time.sleep(1)
