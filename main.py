@@ -1,3 +1,4 @@
+#IMPORT NEEDED LIBRARIES
 import time
 import json
 import random
@@ -25,6 +26,7 @@ try:
 
     random.shuffle(data)
 
+    #Created a menu function
     def menu():
         print("\n")
         print("MENU")
@@ -42,6 +44,7 @@ try:
         else:
             print("Invalid Input.")
 
+    #Created an instructions or the manual for the player
     def instructions():
         print(" I N S T R U C T I O N S ")
         print("Now, how do you play Quiz Impact?")
@@ -97,6 +100,7 @@ try:
         time.sleep(2)
         print("But if you chose to exit, it will let you go back to the menu.")
 
+    #Main gameplay loop function
     def play(iq_points, question_number):
         for question in data:
             print(f"Question {question_number}: {question['question']}")
