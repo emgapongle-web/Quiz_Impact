@@ -15,6 +15,7 @@ time.sleep(1)
 question_number = 1
 letters = ['A', 'B','C','D']
 iq_points = 0
+fanfare = 100
 
 print("\n")
 try:
@@ -101,7 +102,7 @@ try:
         print("But if you chose to exit, it will let you go back to the menu.")
 
     #Main gameplay loop function
-    def play(iq_points, question_number):
+    def play(iq_points, question_number,fanfare):
         for question in data:
             print(f"Question {question_number}: {question['question']}")
             print(f"This is {question['level']}.")
@@ -116,10 +117,10 @@ try:
 
                 if selected == question['answer']:
                     print("\n Correct! \n")
-                    iq_points += question["score increase"]
+                    fanfare += question["fanfare increase"]
                 else:
                     print(f"\n Wrong! Correct answer: {question['answer']} \n")
-                    iq_points +=question["score penalty"]
+                    fanfare +=question["fanfare penalty"]
             else:
                 print("\n Invalid choice. ")
 
