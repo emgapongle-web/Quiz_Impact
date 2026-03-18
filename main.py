@@ -125,7 +125,7 @@ try:
             else:
                 print("\n Invalid choice. ")
 
-            print(f"Your current IQ points are {fanfare}")
+            print(f"Your current fanfare are {fanfare}")
             print(f"You have accumulated {iq_points} iq points so far!")
 
             while True:
