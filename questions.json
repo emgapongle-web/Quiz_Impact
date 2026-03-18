@@ -5,7 +5,8 @@
         "fanfare penalty":-10,
         "fanfare increase":10,
         "options":["Manila", "Bulacan","Cebu","Davao"],
-        "answer":"Manila"
+        "answer":"Manila",
+        "iq_points": 10
     },
     {
         "question":" Which of the following has the lowest frequency?",
@@ -13,7 +14,8 @@
         "fanfare penalty":-20,
         "fanfare increase":20,
         "options":["Visible Light","Gamma Rays", "X-Rays", "Radio waves"],
-        "answer":"Radio waves"
+        "answer":"Radio waves",
+        "iq_points": 15
     },
     {
         "question":" What is the moon phase called when the moon is between the Sun and Earth; the illuminated side faces away, making it invisible?",
@@ -21,6 +23,7 @@
         "fanfare penalty":-30,
         "fanfare increase":30,
         "options": ["Full Moon","Last Quarter", "New Moon", "Waning Crescent"],
-        "answer":"New Moon"
+        "answer":"New Moon",
+        "iq_points": 30
     }
 ]

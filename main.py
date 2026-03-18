@@ -36,7 +36,7 @@ try:
         print("3. Exit")
         user_wow = input("What are you choosing to open? ")
         if user_wow == "1":
-            play(iq_points, question_number)
+            play(iq_points, question_number, fanfare)
         elif user_wow == "2":
             instructions()
         elif user_wow == "3":
@@ -118,13 +118,15 @@ try:
                 if selected == question['answer']:
                     print("\n Correct! \n")
                     fanfare += question["fanfare increase"]
+                    iq_points +=question["iq_points"]
                 else:
                     print(f"\n Wrong! Correct answer: {question['answer']} \n")
                     fanfare +=question["fanfare penalty"]
             else:
                 print("\n Invalid choice. ")
 
-            print(f"Your current IQ points are {iq_points}")
+            print(f"Your current IQ points are {fanfare}")
+            print(f"You have accumulated {iq_points} iq points so far!")
 
             while True:
                 user_yn = input("Do you want to continue? (Y/N) ")
