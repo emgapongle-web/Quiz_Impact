@@ -17,13 +17,27 @@
         "answer":"Radio waves",
         "iq_points": 15
     },
+  {
+    "question": " What is the moon phase called when the moon is between the Sun and Earth; the illuminated side faces away, making it invisible?",
+    "level": "HARD",
+    "fanfare penalty": -30,
+    "fanfare increase": 30,
+    "options": [
+      "Full Moon",
+      "Last Quarter",
+      "New Moon",
+      "Waning Crescent"
+    ],
+    "answer": "New Moon",
+    "iq_points": 30
+  },
     {
-        "question":" What is the moon phase called when the moon is between the Sun and Earth; the illuminated side faces away, making it invisible?",
-        "level" : "HARD",
-        "fanfare penalty":-30,
-        "fanfare increase":30,
-        "options": ["Full Moon","Last Quarter", "New Moon", "Waning Crescent"],
-        "answer":"New Moon",
-        "iq_points": 30
+        "question":"What is the smallest country in the world?",
+        "level" : "Easy",
+        "fanfare penalty": -10,
+        "fanfare increase": 10,
+        "options": ["Vatican City","New York", "London", "Vienna"],
+        "answer":"Vatican City",
+        "iq_points": 10
     }
 ]
