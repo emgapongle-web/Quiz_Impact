@@ -127,6 +127,23 @@ try:
                 else:
                     print(f"\n Wrong! Correct answer: {question['answer']} \n")
                     fanfare +=question["fanfare penalty"]
+                    print(fr"           /^\/^\ ")
+                    print(fr"         _|__|  O| ")
+                    print(fr"\/     /~     \_/ \ ")
+                    print(fr" \____|__________/  \ ")
+                    print(fr"       \_______      \ ")
+                    print(fr"                `\     \                 \ ")
+                    print(fr"                  |     |                  \ ")
+                    print(fr"                 /      /                    \ ")
+                    print(fr"                /     /                       \\")
+                    print(fr"              /      /                         \ \ ")
+                    print(fr"             /     /                            \  \ ")
+                    print(fr"           /     /             ----            \   \ ")
+                    print(fr"          /     /           -~      ~-         |   | ")
+                    print(fr"        (      (        -~    _--    ~-_     _/   |")
+                    print(fr"          \      -____-    -~    -    ~-_-    / ")
+                    print(fr"           -_           -          -       _- ")
+                    print(fr"             --______-                -___- ")
             else:
                 print("\n Invalid choice. ")
 
