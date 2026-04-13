@@ -32,7 +32,7 @@
     "iq_points": 30
   },
     {
-        "question":"What is the smallest country in the world?",
+        "question":"What is the smallest city in the world?",
         "level" : "Easy",
         "fanfare penalty": -10,
         "fanfare increase": 10,
