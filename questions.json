@@ -57,6 +57,16 @@
         "options": ["Leonardo da Vinci","Pablo Picasso", "Vincent van Gogh", "Michelangelo"],
         "answer":"Leonardo da Vinci",
         "iq_points": 10
+    },
+  {
+        "question":"What is the symbol for Breast Cancer Awareness?",
+        "level" : "Easy",
+        "fanfare penalty": -10,
+        "fanfare increase": 5,
+        "options": ["A Breast and Two Hearts","A Pink Ribbon", "A Red Sea Turtle", "The Cast Of Sharknado"],
+        "answer":"A Pink Ribbon",
+        "iq_points": 10
     }
+
 
 ]
