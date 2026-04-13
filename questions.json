@@ -67,6 +67,15 @@
         "options": ["wrongg","left", "wrote", "Regine Velasquez"],
         "answer":"left",
         "iq_points": 10
+    },
+    {
+        "question":"Who is the killer in the first friday the 13th movie?",
+        "level" : "Medium",
+        "fanfare penalty": -20,
+        "fanfare increase": 10,
+        "options": ["Jason Voorhees","Oggie Alcasid", "Pamela Voorhees", "Freddy Kreuger"],
+        "answer":"Pamela Voorhees",
+        "iq_points": 10
     }
 
 ]
