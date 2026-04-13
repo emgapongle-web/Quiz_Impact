@@ -57,6 +57,15 @@
         "options": ["Leonardo da Vinci","Pablo Picasso", "Vincent van Gogh", "Michelangelo"],
         "answer":"Leonardo da Vinci",
         "iq_points": 10
+    },
+  {
+        "question":"What is the opposite of left",
+        "level" : "Easy",
+        "fanfare penalty": -10,
+        "fanfare increase": 10,
+        "options": ["write","right", "wright", "reight"],
+        "answer":"right",
+        "iq_points": 10
     }
 
 ]
