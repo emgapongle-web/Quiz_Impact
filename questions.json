@@ -22,12 +22,7 @@
     "level": "HARD",
     "fanfare penalty": -30,
     "fanfare increase": 30,
-    "options": [
-      "Full Moon",
-      "Last Quarter",
-      "New Moon",
-      "Waning Crescent"
-    ],
+    "options": ["Full Moon", "Last Quarter", "New Moon", "Waning Crescent"],
     "answer": "New Moon",
     "iq_points": 30
   },
@@ -57,6 +52,36 @@
         "options": ["Leonardo da Vinci","Pablo Picasso", "Vincent van Gogh", "Michelangelo"],
         "answer":"Leonardo da Vinci",
         "iq_points": 10
+    },
+  {
+        "question":"What is the symbol for Breast Cancer Awareness?",
+        "level" : "Easy",
+        "fanfare penalty": -10,
+        "fanfare increase": 5,
+        "options": ["A Breast and Two Hearts","A Pink Ribbon", "A Red Sea Turtle", "The Cast Of Sharknado"],
+        "answer":"A Pink Ribbon",
+        "iq_points": 10
+    },
+     {
+        "question":"How many elements are in the periodic table?",
+        "level" : "Medium",
+        "fanfare penalty": -20,
+        "fanfare increase": 10,
+        "options": ["117","118", "128", "126"],
+        "answer":"118",
+        "iq_points": 15
+    },
+     {
+        "question":"What type of tree is pictured on the Lebanese flag?",
+        "level" : "Hard",
+        "fanfare penalty": -40,
+        "fanfare increase": 15,
+        "options": ["Cedar tree","Birch Tree", "Oleander", "Tree of Heaven"],
+        "answer":"Cedar tree",
+        "iq_points": 20
     }
+
+
+
 
 ]
