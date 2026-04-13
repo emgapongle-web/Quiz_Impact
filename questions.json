@@ -39,5 +39,24 @@
         "options": ["Vatican City","New York", "London", "Vienna"],
         "answer":"Vatican City",
         "iq_points": 10
+    },
+     {
+        "question":"In what year did the Ottoman Empire officially end?",
+        "level" : "Medium",
+        "fanfare penalty": -20,
+        "fanfare increase": 10,
+        "options": ["1923","1922", "1822", "1924"],
+        "answer":"1922",
+        "iq_points": 15
+    },
+   {
+        "question":"Who painted the Mona Lisa?",
+        "level" : "Easy",
+        "fanfare penalty": -10,
+        "fanfare increase": 5,
+        "options": ["Leonardo da Vinci","Pablo Picasso", "Vincent van Gogh", "Michelangelo"],
+        "answer":"Leonardo da Vinci",
+        "iq_points": 10
     }
+
 ]
