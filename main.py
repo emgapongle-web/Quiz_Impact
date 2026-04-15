@@ -21,6 +21,7 @@ question_number = 1
 letters = ['A', 'B','C','D']
 iq_points = 0
 fanfare = 100
+hint_cost = 20
 
 print("\n")
 try:
@@ -32,6 +33,22 @@ try:
 
     random.shuffle(data)
 
+    def main():
+        print("Let's continue! ")
+        print(" 1. MENU 2.ACHIEVEMENT PAGE 3. EXIT.")
+        while True:
+            userC = input("Where would you like to go? ")
+            if userC == '1':
+                menu()
+                break
+            elif userC == '2':
+                achiev_page()
+                break
+            elif userC == '3':
+                exit()
+            else:
+                print("girl, invalid.")
+
     #Created a menu function
     def menu():
         print("\n")
@@ -39,31 +56,38 @@ try:
         print("1. Play")
         print("2. Manual")
         print("3. Exit")
-        user_wow = input("What are you choosing to open? ")
-        if user_wow == "1":
-            play(iq_points, question_number, fanfare)
-        elif user_wow == "2":
-            instructions()
-        elif user_wow == "3":
-            print("Goodbye.")
-            exit()
-        else:
-            print("Invalid Input.")
+        while True:
+            user_wow = input("What are you choosing to open? ")
+            if user_wow == "1":
+                play(iq_points, question_number, fanfare)
+                break
+            elif user_wow == "2":
+                instructions()
+            elif user_wow == "3":
+                print("Goodbye. [RETURNING TO MAIN PAGE...]")
+                main()
+            else:
+                print("Invalid Input.")
 
-    #Created an instructions or the manual for the player
+        # Created an instructions or the manual for the player
+
+
     def instructions():
         print(" I N S T R U C T I O N S ")
         print("Now, how do you play Quiz Impact?")
         time.sleep(1)
         print("But before that, you might want to take note of these things: ")
         time.sleep(2)
-        print("1. This game has a Gacha system where you can wish for 10 times at once and for 1 time only. Proceed to the gacha interface to make a wish! "
-              "Additionally, you can see your wish history there as well.")
+        print(
+            "1. This game has a Gacha system where you can wish for 10 times at once and for 1 time only. Proceed to the gacha interface to make a wish! "
+            "Additionally, you can see your wish history there as well.")
         time.sleep(5)
-        print("2. This is a quiz type game that contains 300 questions. 50 EASY questions, 100 NORMAL questions, and 150 HARD questions. "
-              "It covers the different subjects and topics of grade 8.")
+        print(
+            "2. This is a quiz type game that contains 300 questions. 50 EASY questions, 100 NORMAL questions, and 150 HARD questions. "
+            "It covers the different subjects and topics of grade 8.")
         time.sleep(5)
-        print("3. This game has chances, also known as, pity where you can get guaranteed to have the highest and amazing magical helper if you have a high pity.")
+        print(
+            "3. This game has chances, also known as, pity where you can get guaranteed to have the highest and amazing magical helper if you have a high pity.")
         time.sleep(5)
         print("4. IQ points serve as currency to make wishes!")
         time.sleep(3)
@@ -79,11 +103,14 @@ try:
         time.sleep(5)
         print("Let's now proceed to the instructions!")
         time.sleep(1)
-        print("First, as you open the game, you'll be given options where you can find the menu, the gacha interface and the achievement page. ")
+        print(
+            "First, as you open the game, you'll be given options where you can find the menu, the gacha interface and the achievement page. ")
         time.sleep(3)
-        print("If you start with the menu, you'll find the options where you can be directed to the Manual, Play, or Exit!")
+        print(
+            "If you start with the menu, you'll find the options where you can be directed to the Manual, Play, or Exit!")
         time.sleep(4)
-        print("Else if you chose to go to the Gacha Interface, you'll be directed to a page where it asks you to pull. ")
+        print(
+            "Else if you chose to go to the Gacha Interface, you'll be directed to a page where it asks you to pull. ")
         time.sleep(3)
         print("Lastly, if you want to see the record of your achievements, then you may go to the achievement page. ")
         time.sleep(4)
@@ -96,15 +123,9 @@ try:
         print("As you start the game, one of the questions will now start to be given. "
               "The questions will be randomly given! If you answered an easy one, the next one might be a hard question. ")
         time.sleep(3)
-        print("With this, you can now answer them in a certain amount of time. (The higher the difficulty level, the longer the time!)")
+        print(
+            "With this, you can now answer them in a certain amount of time. (The higher the difficulty level, the longer the time!)")
         time.sleep(4)
-        print("After answering a question, the program will tell you if your answer is wrong or right. ")
-        time.sleep(3)
-        print("Then, it will ask you if you want to continue or not. ")
-        time.sleep(3)
-        print("If you chose to continue, then it will proceed to ask you some questions.")
-        time.sleep(2)
-        print("But if you chose to exit, it will let you go back to the menu.")
 
     #Main gameplay loop function
     def play(iq_points, question_number,fanfare):
