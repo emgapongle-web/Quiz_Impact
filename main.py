@@ -184,6 +184,9 @@ try:
 
             question_number += 1
 
+    def achiev_page():
+        print("You're doing amazing! Here's a record of your achievements!")
+
 except FileNotFoundError:
     print("Error: The file 'data.json' was not found.")
 except json.JSONDecodeError as e:
