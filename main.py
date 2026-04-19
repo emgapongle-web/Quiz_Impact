@@ -33,41 +33,30 @@ try:
 
     random.shuffle(data)
 
-    def main():
+    #Created a menu function
+    def menu():
         print("Let's continue! ")
-        print(" 1. MENU 2.ACHIEVEMENT PAGE 3. EXIT.")
+        print(r""" 
+1. PLAY
+2. ACHIEVEMENT PAGE
+3. MANUAL 
+4. EXIT
+        """)
         while True:
             userC = input("Where would you like to go? ")
             if userC == '1':
-                menu()
+                play(iq_points,question_number,fanfare)
                 break
             elif userC == '2':
                 achiev_page()
                 break
             elif userC == '3':
+                instructions()
+                break
+            elif userC == '4':
                 exit()
             else:
                 print("girl, invalid.")
-
-    #Created a menu function
-    def menu():
-        print("\n")
-        print("MENU")
-        print("1. Play")
-        print("2. Manual")
-        print("3. Exit")
-        while True:
-            user_wow = input("What are you choosing to open? ")
-            if user_wow == "1":
-                play(iq_points, question_number, fanfare)
-                break
-            elif user_wow == "2":
-                instructions()
-            elif user_wow == "3":
-                print("Goodbye. [RETURNING TO MAIN PAGE...]")
-                main()
-            else:
-                print("Invalid Input.")
 
         # Created an instructions or the manual for the player
 
