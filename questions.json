@@ -1,12 +1,93 @@
 [
-{
+    {
         "question":"What is the capital of the Philippines?",
         "level" : "EASY",
         "fanfare penalty":-10,
         "fanfare increase":10,
         "options":["Manila", "Bulacan","Cebu","Davao"],
         "answer":"Manila",
-        "iq_points": 10
+        "iq_points": 10,
+        "hint": "It is a densely populated bayside city on the island of Luzon, which mixes Spanish colonial architecture with modern skyscrapers. "
+    },
+    {
+        "question":"Which country is home to the kangaroo? ",
+        "level" : "EASY",
+        "fanfare penalty":-10,
+        "fanfare increase":10,
+        "options":["Philippines", "Canada","Australia","South Korea"],
+        "answer":"Australia",
+        "iq_points": 10,
+        "hint": "The sixth largest country in the world. "
+    },
+    {
+        "question":"Which compound is known as the universal solvent? ",
+        "level" : "EASY",
+        "fanfare penalty":-10,
+        "fanfare increase":10,
+        "options":["Glucose", "Sodium Chloride","Juice","Water"],
+        "answer":"Water",
+        "iq_points": 10,
+        "hint": "H20"
+    },
+    {
+        "question":"What is the tallest animal in the world?  ",
+        "level" : "EASY",
+        "fanfare penalty":-10,
+        "fanfare increase":10,
+        "options":["Giraffe", "Cat","Zebra","Snake"],
+        "answer":"Giraffe",
+        "iq_points": 10,
+        "hint": "Has a long neck"
+    },
+    {
+        "question":"What is the smallest city in the world?",
+        "level" : "Easy",
+        "fanfare penalty": -10,
+        "fanfare increase": 10,
+        "options": ["Vatican City","New York", "London", "Vienna"],
+        "answer":"Vatican City",
+        "iq_points": 10,
+        "hint": "A city-state surrounded by Rome, Italy. "
+    },
+    {
+        "question":"Which of the following planets is the closest to the sun? ",
+        "level" : "Easy",
+        "fanfare penalty": -10,
+        "fanfare increase": 10,
+        "options": ["Mars","Earth", "Mercury", "Neptune"],
+        "answer":"Mercury",
+        "iq_points": 10,
+        "hint": "The smallest planet in our solar system. "
+    },
+    {
+        "question":"What is the opposite of right?",
+        "level" : "Easy",
+        "fanfare penalty": -10,
+        "fanfare increase": 10,
+        "options": ["wrong","left", "wrote", "Regine Velasquez"],
+        "answer":"left",
+        "iq_points": 10,
+        "hint": "Side opposite of right"
+    },
+    {
+        "question":"Who painted the Mona Lisa?",
+        "level" : "Easy",
+        "fanfare penalty": -10,
+        "fanfare increase": 10,
+        "options": ["Leonardo da Vinci","Pablo Picasso", "Vincent van Gogh", "Michelangelo"],
+        "answer":"Leonardo da Vinci",
+        "iq_points": 10,
+        "hint":"Known for his dramatic and expressive artwork."
+    },
+    {
+        "question":"How many legs does a spider have? ",
+        "level" : "Easy",
+        "fanfare penalty": -10,
+        "fanfare increase": 10,
+        "options": ["6","7", "8", "9"],
+        "answer":"8",
+        "iq_points": 10,
+        "hint":"It is more than 7"
     },
     {
         "question":" Which of the following has the lowest frequency?",
@@ -15,57 +96,26 @@
         "fanfare increase":20,
         "options":["Visible Light","Gamma Rays", "X-Rays", "Radio waves"],
         "answer":"Radio waves",
-        "iq_points": 15
+        "iq_points": 10,
+        "hint": "An example of this is television broadcasting. "
     },
-  {
-    "question": " What is the moon phase called when the moon is between the Sun and Earth; the illuminated side faces away, making it invisible?",
-    "level": "HARD",
-    "fanfare penalty": -30,
-    "fanfare increase": 30,
-    "options": [
-      "Full Moon",
-      "Last Quarter",
-      "New Moon",
-      "Waning Crescent"
-    ],
-    "answer": "New Moon",
-    "iq_points": 30
-  },
     {
-        "question":"What is the smallest city in the world?",
-        "level" : "Easy",
-        "fanfare penalty": -10,
-        "fanfare increase": 10,
-        "options": ["Vatican City","New York", "London", "Vienna"],
-        "answer":"Vatican City",
-        "iq_points": 10
+        "question":" What is the largest ocean on Earth? ",
+        "level" : "MEDIUM",
+        "fanfare penalty":-20,
+        "fanfare increase":20,
+        "options":["Antlantic Ocean","Indian Ocean", "Pacific Ocean", "Agoo Eco Park"],
+        "answer":"Pacific Ocean",
+        "iq_points": 10,
+        "hint": "It sits between America and Asia "
     },
-     {
+    {
         "question":"In what year did the Ottoman Empire officially end?",
         "level" : "Medium",
         "fanfare penalty": -20,
         "fanfare increase": 10,
         "options": ["1923","1922", "1822", "1924"],
         "answer":"1922",
-        "iq_points": 15
-    },
-    {
-        "question":"Who painted the Mona Lisa?",
-        "level" : "Easy",
-        "fanfare penalty": -10,
-        "fanfare increase": 5,
-        "options": ["Leonardo da Vinci","Pablo Picasso", "Vincent van Gogh", "Michelangelo"],
-        "answer":"Leonardo da Vinci",
-        "iq_points": 10
-    },
-
-    {
-        "question":"What is the opposite of right?",
-        "level" : "Easy",
-        "fanfare penalty": -10,
-        "fanfare increase": 5,
-        "options": ["wrongg","left", "wrote", "Regine Velasquez"],
-        "answer":"left",
         "iq_points": 10
     },
     {
@@ -75,7 +125,68 @@
         "fanfare increase": 10,
         "options": ["Jason Voorhees","Oggie Alcasid", "Pamela Voorhees", "Freddy Kreuger"],
         "answer":"Pamela Voorhees",
-        "iq_points": 10
+        "iq_points": 10,
+        "hint": "Starts with a P."
+    },
+    {
+        "question":"What is acrophobia a fear of? ",
+        "level" : "Medium",
+        "fanfare penalty": -20,
+        "fanfare increase": 10,
+        "options": ["Titans","Height", "Water", "Mommy Oni"],
+        "answer":"Height",
+        "iq_points": 10,
+        "hint": "Very high"
+    },
+    {
+        "question":"What is the 4th letter of the Greek alphabet? ",
+        "level" : "Medium",
+        "fanfare penalty": -20,
+        "fanfare increase": 10,
+        "options": ["Delta","Alpha", "Beta", "Cat"],
+        "answer":"Delta",
+        "iq_points": 10,
+        "hint": "Starts with a D."
+    },
+    {
+        "question": " What is the moon phase called when the moon is between the Sun and Earth; the illuminated side faces away, making it invisible?",
+        "level": "HARD",
+        "fanfare penalty": -30,
+        "fanfare increase": 30,
+        "options": ["Full Moon", "Last Quarter", "New Moon", "Waning Crescent"],
+        "answer": "New Moon",
+        "iq_points": 30,
+        "hint": "First phase of the lunar cycle. "
+    },
+    {
+        "question":"Who was the ancient Greek God of the Sun?",
+        "level" : "Hard",
+        "fanfare penalty": -30,
+        "fanfare increase": 30,
+        "options": ["Hera","Zeus", "Apollo", "Eren Yeager"],
+        "answer":"Apollo",
+        "iq_points": 30 ,
+        "hint": "The son of Cronus and Rhea"
+    },
+    {
+        "question":"How many minutes are in a full week?",
+        "level" : "Hard",
+        "fanfare penalty": -30,
+        "fanfare increase": 30,
+        "options": ["10,070","10,080", "11,000", "10,120"],
+        "answer":"10,080",
+        "iq_points": 30 ,
+        "hint": "10,000 + 80"
+    },
+    {
+        "question":"What is the world's oldest continuously inhabited city?",
+        "level" : "Hard",
+        "fanfare penalty": -30,
+        "fanfare increase": 30,
+        "options": ["Zamboanga City","California City", "Vatican City", "Damascus City"],
+        "answer":"Damascus City",
+        "iq_points": 30 ,
+        "hint": "Rhymes with Hibiscus."
     }
 
 ]
