@@ -46,7 +46,7 @@ try:
         while True:
             userC = input("Where would you like to go? ")
             if userC == '1':
-                play(iq_points,question_number,fanfare)
+                play(iq_points,question_number,fanfare, hint_cost, hint)
                 break
             elif userC == '2':
                 instructions()
