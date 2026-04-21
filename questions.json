@@ -128,6 +128,18 @@
         "iq_points": 10,
         "hint": "Starts with a P."
     },
+
+    {
+        "question":"Which country was the first to legalize same-sex marriage",
+        "level" : "Medium",
+        "fanfare penalty": -20,
+        "fanfare increase": 10,
+        "options": ["The Netherlands","Thailand", "The United States Of America", "Denmark"],
+        "answer":"The Netherlands",
+        "iq_points": 10,
+        "hint": "European."
+    },
+
     {
         "question":"What is acrophobia a fear of? ",
         "level" : "Medium",
@@ -187,6 +199,39 @@
         "answer":"Damascus City",
         "iq_points": 30 ,
         "hint": "Rhymes with Hibiscus."
+    },
+
+    {
+        "question":"What was the first feature-length animated movie ever released?",
+        "level" : "Hard",
+        "fanfare penalty": -30,
+        "fanfare increase": 30,
+        "options": [" The Godfather","Lord Of The Rings: The Twin Towers", "Snow White and the Seven Dwarfs", "The Thing"],
+        "answer":"Snow White and the Seven Dwarfs",
+        "iq_points": 30 ,
+        "hint": "Grumpy."
+    },
+
+    {
+        "question":"Which singer partnered with Dunkin' Donuts in 2024 to release a custom drink called the Brown Sugar Shakin' Espresso?",
+        "level" : "Hard",
+        "fanfare penalty": -30,
+        "fanfare increase": 30,
+        "options": [" Lana Del Rey","Sabrina Carpenter", "Taylor Swift", "Olivia Rodrigo"],
+        "answer":"Sabrina Carpenter",
+        "iq_points": 30 ,
+        "hint": "Short n' Sweet"
+    },
+
+    {
+        "question":"Who is the first winner of Ru Paul's Drag Race",
+        "level" : "Hard",
+        "fanfare penalty": -30,
+        "fanfare increase": 30,
+        "options": [" Violet Chachki","Suzie Toot", "Nymphia Wind", "Bebe Zahara Benet"],
+        "answer":"Bebe Zahara Benet",
+        "iq_points": 30 ,
+        "hint": "Black"
     }
 
 ]
