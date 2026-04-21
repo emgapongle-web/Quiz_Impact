@@ -39,9 +39,8 @@ try:
         print("Let's continue! ")
         print(r""" 
 1. PLAY
-2. ACHIEVEMENT PAGE
-3. MANUAL 
-4. EXIT
+2. MANUAL 
+3. EXIT
         """)
         while True:
             userC = input("Where would you like to go? ")
