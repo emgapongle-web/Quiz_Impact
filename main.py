@@ -49,7 +49,7 @@ try:
                 play(iq_points,question_number,fanfare)
                 break
             elif userC == '2':
-                achiev_page()
+                instructions()
                 break
             elif userC == '3':
                 print(f"You have accumulated {iq_points} in total!")
@@ -132,7 +132,7 @@ try:
         time.sleep(4)
 
     #Main gameplay loop function
-    def play(iq_points, question_number,fanfare):
+    def play(iq_points, question_number,fanfare, hint_cost, hint):
         for question in data:
             print(f"Question {question_number}: {question['question']}")
             print(f"This is {question['level']}.")
@@ -140,37 +140,51 @@ try:
             for i in range(len(options)):
                 print(f"{letters[i]}. {options[i]} ")
 
-            user_input = input("Your choice(A/B/C/D): ").upper().strip()
-            if user_input in letters:
-                index = letters.index(user_input)
-                selected = options[index]
+            while True:
+                user_input = input("Your choice(A/B/C/D): ").upper().strip()
+                if user_input in letters:
+                    index = letters.index(user_input)
+                    selected = options[index]
 
-                if selected == question['answer']:
-                    print("\n Correct! \n")
-                    fanfare += question["fanfare increase"]
-                    iq_points +=question["iq_points"]
+                    if selected == question['answer']:
+                        print("\n Correct! \n")
+                        fanfare += question["fanfare increase"]
+                        iq_points +=question["iq_points"]
+                        break
+                    else:
+                        print(f"\n Wrong! Correct answer: {question['answer']} \n")
+                        fanfare +=question["fanfare penalty"]
+                        print(fr"           /^\/^\ ")
+                        print(fr"         _|__|  O| ")
+                        print(fr"\/     /~     \_/ \ ")
+                        print(fr" \____|__________/  \ ")
+                        print(fr"       \_______      \ ")
+                        print(fr"                `\     \                 \ ")
+                        print(fr"                  |     |                  \ ")
+                        print(fr"                 /      /                    \ ")
+                        print(fr"                /     /                       \\")
+                        print(fr"              /      /                         \ \ ")
+                        print(fr"             /     /                            \  \ ")
+                        print(fr"           /     /             ----            \   \ ")
+                        print(fr"          /     /           -~      ~-         |   | ")
+                        print(fr"        (      (        -~    _--    ~-_     _/   |")
+                        print(fr"          \      -____-    -~    -    ~-_-    / ")
+                        print(fr"           -_           -          -       _- ")
+                        print(fr"             --______-                -___- ")
+                    break
+
+                elif user_input in hint:
+                    if iq_points >= hint_cost:
+                        iq_points = iq_points - hint_cost
+                        print(f"HINT: {question['hint']}")
+                        continue
+                    else:
+                        user_input = print("Not enough! You may still answer though")
+                        continue
+                    break
+
                 else:
-                    print(f"\n Wrong! Correct answer: {question['answer']} \n")
-                    fanfare +=question["fanfare penalty"]
-                    print(fr"           /^\/^\ ")
-                    print(fr"         _|__|  O| ")
-                    print(fr"\/     /~     \_/ \ ")
-                    print(fr" \____|__________/  \ ")
-                    print(fr"       \_______      \ ")
-                    print(fr"                `\     \                 \ ")
-                    print(fr"                  |     |                  \ ")
-                    print(fr"                 /      /                    \ ")
-                    print(fr"                /     /                       \\")
-                    print(fr"              /      /                         \ \ ")
-                    print(fr"             /     /                            \  \ ")
-                    print(fr"           /     /             ----            \   \ ")
-                    print(fr"          /     /           -~      ~-         |   | ")
-                    print(fr"        (      (        -~    _--    ~-_     _/   |")
-                    print(fr"          \      -____-    -~    -    ~-_-    / ")
-                    print(fr"           -_           -          -       _- ")
-                    print(fr"             --______-                -___- ")
-            else:
-                print("\n Invalid choice. ")
+                    print("\n Invalid choice. ")
 
             print(f"Your current fanfare are {fanfare}")
             print(f"You have accumulated {iq_points} iq points so far!")
@@ -187,9 +201,6 @@ try:
                     print("Invalid, girl.")
 
             question_number += 1
-
-    def achiev_page():
-        print("You're doing amazing! Here's a record of your achievements!")
 
 except FileNotFoundError:
     print("Error: The file 'data.json' was not found.")
