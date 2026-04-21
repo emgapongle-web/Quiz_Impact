@@ -19,6 +19,7 @@ time.sleep(1)
 
 question_number = 1
 letters = ['A', 'B','C','D']
+hint = ['H']
 iq_points = 0
 fanfare = 100
 hint_cost = 20
@@ -51,9 +52,23 @@ try:
                 achiev_page()
                 break
             elif userC == '3':
-                instructions()
-                break
-            elif userC == '4':
+                print(f"You have accumulated {iq_points} in total!")
+                if iq_points >= 100:
+                    print("Good Job! And because of that you have five heart pitiks from QUIZ IMPACT!")
+                    time.sleep(3)
+                    print("<3 !")
+                    time.sleep(1)
+                    print("<3 !")
+                    time.sleep(1)
+                    print("<3 !")
+                    time.sleep(1)
+                    print("<3 !")
+                    time.sleep(1)
+                    print("<3 !")
+                    time.sleep(1)
+                    print("Nice playing with you. Goodbye!")
+                else:
+                    print("Good bye.")
                 exit()
             else:
                 print("girl, invalid.")
