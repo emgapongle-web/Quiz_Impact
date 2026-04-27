@@ -3,10 +3,11 @@ import time
 import json
 import random
 
-user_name = str(input("What's your name?"))
+user_name = str(input("What's your name?")) #This line asks for the user's name
 print(f"What an amazing name you got there, {user_name}!")
 time.sleep(1)
 print("Well then, welcome to...")
+#Print the game's title
 print(fr"   ____  __  ___________      ______  _______  ___   ______________")
 print(fr"  / __ \/ / / /  _/__  /     /  _/  |/  / __ \/   | / ____/_  __/ /")
 print(fr" / / / / / / // /   / /      / // /|_/ / /_/ / /| |/ /     / / / / ")
@@ -16,6 +17,7 @@ time.sleep(1)
 print("I hope you enjoy and learn something new throughout the game.")
 time.sleep(1)
 
+#Initialize needed variables
 question_number = 1
 letters = ['A', 'B','C','D']
 hint = ['H']
@@ -50,8 +52,8 @@ try:
                 instructions()
                 break
             elif userC == '3':
-                print(f"You have accumulated {iq_points} in total!")
-                if iq_points >= 100:
+                print(f"You have accumulated {iq_points} iq points in total!") #Special message will display if the player got 130 iq_points.
+                if iq_points >= 130:
                     print("Good Job! And because of that you have five heart pitiks from QUIZ IMPACT!")
                     time.sleep(3)
                     print("<3 !")
@@ -73,78 +75,66 @@ try:
 
         # Created an instructions or the manual for the player
 
-
     def instructions():
         print(" I N S T R U C T I O N S ")
         print("Now, how do you play Quiz Impact?")
         time.sleep(1)
         print("But before that, you might want to take note of these things: ")
+        time.sleep(5)
+        print(
+            "\nThis is a quiz type game includes general knowledge questions")
+        time.sleep(5)
+        print(
+            "The game keeps track of your score through a mechanic called fanfare")
+        time.sleep(3)
+        print("If your fanfare drops too low you might risk ending the game quickly!")
+        time.sleep(5)
+        print("\nFurthermore, IQ points serve as currency to ask for hints!")
+        time.sleep(3)
+        print("1 correct answer from an EASY question = +10 IQ points")
+        time.sleep(1)
+        print("1 correct answer from a NORMAL question = +20 IQ points")
+        time.sleep(1)
+        print("1 correct answer from a HARD question = +30 IQ points")
+        time.sleep(1)
+        print("1 Hint = 20 IQ points")
+        time.sleep(1)
+        print("You may use the hint button; 'H' to ask for a hint")
+        time.sleep(1)
+        print("You may get a hint only once per question")
+        time.sleep(5)
+        print("\nLet's now proceed to the instructions!")
+        time.sleep(1)
+        print("First, as you open the game, you shall be directed to the menu page.")
         time.sleep(2)
-        print(
-            "1. This game has a Gacha system where you can wish for 10 times at once and for 1 time only. Proceed to the gacha interface to make a wish! "
-            "Additionally, you can see your wish history there as well.")
-        time.sleep(5)
-        print(
-            "2. This is a quiz type game that contains 300 questions. 50 EASY questions, 100 NORMAL questions, and 150 HARD questions. "
-            "It covers the different subjects and topics of grade 8.")
-        time.sleep(5)
-        print(
-            "3. This game has chances, also known as, pity where you can get guaranteed to have the highest and amazing magical helper if you have a high pity.")
-        time.sleep(5)
-        print("4. IQ points serve as currency to make wishes!")
-        time.sleep(3)
-        print("5. 1 correct answer from an EASY question = +10 IQ points")
+        print("You'll find the options where you can be directed to the Manual, Play, or Exit!")
         time.sleep(1)
-        print("6. 1 correct answer from a NORMAL question = +20 IQ points")
+        print("Else if you chose to go to the 'Play', you'll be directed to the main gameplay loop")
         time.sleep(1)
-        print("7. 1 correct answer from a HARD question = +30 IQ points")
-        time.sleep(1)
-        print("8. 1 wish = 50 IQ points")
-        time.sleep(1)
-        print("9. 10 wishes = 500 IQ points")
-        time.sleep(5)
-        print("Let's now proceed to the instructions!")
-        time.sleep(1)
-        print(
-            "First, as you open the game, you'll be given options where you can find the menu, the gacha interface and the achievement page. ")
-        time.sleep(3)
-        print(
-            "If you start with the menu, you'll find the options where you can be directed to the Manual, Play, or Exit!")
-        time.sleep(4)
-        print(
-            "Else if you chose to go to the Gacha Interface, you'll be directed to a page where it asks you to pull. ")
-        time.sleep(3)
-        print("Lastly, if you want to see the record of your achievements, then you may go to the achievement page. ")
-        time.sleep(4)
-        print("Now, in the menu, if you chose to go to the Manual, you'll be directed here!")
+        print("If you go to the Manual you will be directed here")
         time.sleep(3)
         print("But if you want to exit, then choose the exit option!")
-        time.sleep(3)
-        print("And of course, if you chose to start, you'll be led to the game already. ")
-        time.sleep(2)
+        time.sleep(1)
         print("As you start the game, one of the questions will now start to be given. "
               "The questions will be randomly given! If you answered an easy one, the next one might be a hard question. ")
         time.sleep(3)
-        print(
-            "With this, you can now answer them in a certain amount of time. (The higher the difficulty level, the longer the time!)")
-        time.sleep(4)
+        print("Finally, good luck and have fun!")
         menu()
 
     #Main gameplay loop function
     def play(iq_points, question_number,fanfare, hint_cost, hint):
         for question in data:
-            print(f"Question {question_number}: {question['question']}")
+            print(f"\nQuestion {question_number}: {question['question']}")
             print(f"This is {question['level']}.")
             options = question['options']
             for i in range(len(options)):
                 print(f"{letters[i]}. {options[i]} ")
 
             while True:
-                user_input = input("Your choice(A/B/C/D): ").upper().strip()
+                user_input = input("Your choice(A/B/C/D): ").upper().strip() #Validates the input whether capital or lowercase
                 if user_input in letters:
                     index = letters.index(user_input)
                     selected = options[index]
-
                     if selected == question['answer']:
                         print("\n Correct! \n")
                         fanfare += question["fanfare increase"]
@@ -170,11 +160,10 @@ try:
                         print(fr"          \      -____-    -~    -    ~-_-    / ")
                         print(fr"           -_           -          -       _- ")
                         print(fr"             --______-                -___- ")
-                        if fanfare <= 0:
+                        if fanfare <= 0: #Fanfare mechanic
                             exit()
                     break
-
-                elif user_input in hint:
+                elif user_input in hint: #The hint system
                     if iq_points >= hint_cost:
                         iq_points = iq_points - hint_cost
                         print(f"HINT: {question['hint']}")
@@ -183,15 +172,15 @@ try:
                         user_input = print("Not enough! You may still answer though")
                         continue
                     break
-
                 else:
                     print("\n Invalid choice. ")
 
+            #Shows how many fanfare and the iq points the player has
             print(f"Your current fanfare are {fanfare}")
             print(f"You have accumulated {iq_points} iq points so far!")
 
             while True:
-                user_yn = input("Do you want to continue? (Y/N) ")
+                user_yn = input("Do you want to continue? (Y/N) ") #Asks the player if they want to continue
                 if user_yn.lower() == 'y':
                     print("Alright, let's continue.")
                     break
@@ -201,7 +190,7 @@ try:
                 else:
                     print("Invalid, girl.")
 
-            question_number += 1
+            question_number += 1 #Proceeds to the next question item
 
 except FileNotFoundError:
     print("Error: The file 'data.json' was not found.")
